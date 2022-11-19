@@ -74,15 +74,16 @@ function resultat() {
 
     
 }
-
-}
 if(dScore === 3 || mScore === 3 ){
     document.createElement('p')
     package.innerText = 'Vi har en vinnare'
+    document.createElement('button')
+    button.innerText = 'Starta om'
     button.addEventListener('click', ()=>{
         helaSpelet()
     })
     
 }
-helaSpelet()
+}
 
+helaSpelet()
