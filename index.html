@@ -10,14 +10,16 @@
 <body>
     <div class="container">
         <img src="img/stensaxpåse.jfif" alt="">
-        <h2>Datorns val: <span id="datorn"></span></h2>
-        <h2>Mitt val: <span id="mitt"></span></h2>
+        <label for="">Namn</label><input id="input" type="text">
+        <h2>Datorns val: <span id="datorn"></span></h2> <h1 id="d-poäng">0</h1>
+        <h2>Mitt val: <span id="mitt"></span></h2><h1 id="m-poäng">0</h1>
         <h2>Resultat: <span id="resultat"></span></h2>
         <div>
             <button id="sten">Sten</button>
             <button id="sax">Sax</button>
             <button id="påse">Påse</button>
         </div>  
+        <div><p id="output"></p></div>
     </div>
     <script src="script.js"></script>
 </body>
