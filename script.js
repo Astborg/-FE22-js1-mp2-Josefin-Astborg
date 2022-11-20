@@ -6,13 +6,10 @@ const output = document.getElementById('output')
 
 let dScore = 0
 let mScore = 0
-let mittVal
-let datorVal
-let result
-
-
-
-        
+let mittVal = ''
+let datorVal = ''
+let result = 0
+   
 function helaSpelet(){
 friaVal.forEach(frittVal => frittVal.addEventListener('click',
 (e) => {
@@ -23,7 +20,7 @@ friaVal.forEach(frittVal => frittVal.addEventListener('click',
     
 }))
 
-
+}
 function körDatorVal() {
     const randomNumber = Math.floor(Math.random() * 3) +1
     if(randomNumber === 1){
@@ -71,19 +68,34 @@ function resultat() {
     resultatDisplay.innerHTML = result 
     document.getElementById('d-poäng').innerText =dScore
     document.getElementById('m-poäng').innerText =mScore
-
+       
+    vemVann()
+}
+function vemVann(){
+    if(dScore === 3 ){
+        document.getElementById('vunnit').innerText = 'Datorn har vunnit!'
+        let btn = document.createElement('button')
+        btn.appendChild(document.createTextNode('Starta om!'))
+        let page = document.getElementById('button')
+        page.appendChild(btn)
     
-}
-if(dScore === 3 || mScore === 3 ){
-    document.createElement('p')
-    package.innerText = 'Vi har en vinnare'
-    document.createElement('button')
-    button.innerText = 'Starta om'
-    button.addEventListener('click', ()=>{
-        helaSpelet()
-    })
-    
-}
-}
+    }else if (mScore === 3){
+        document.getElementById('vunnit').innerText = 'Jag har vunnit!'
+        let btn = document.createElement('button')
+        btn.appendChild(document.createTextNode('Starta om!'))
+        let page = document.getElementById('button')
+        page.appendChild(btn)
 
+        }
+      
+    }  
+
+function startaOm(){
+        window.parent.location = window.parent.location.href
+        
+    
+        
+}
 helaSpelet()
+
+
