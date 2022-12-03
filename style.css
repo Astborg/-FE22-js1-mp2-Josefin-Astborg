@@ -17,3 +17,20 @@ button{
     width: 80px; 
     cursor: pointer; 
 }
+#namnBtn{
+    background-color:rgb(236, 249, 249);
+    border-radius: 20%; 
+    border: none; 
+    padding: 15px; 
+    width: 80px; 
+    cursor: pointer; 
+}
+#div{
+    margin: 25px;
+}
+#input{
+    padding: 8px; 
+    border-radius: 5px; 
+    border: 1px solid rgb(201, 199, 199)
+
+}

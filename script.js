@@ -3,21 +3,25 @@ const mittValDisplay = document.getElementById('mitt')
 const resultatDisplay = document.getElementById('resultat')
 const friaVal = document.querySelectorAll('button')
 const output = document.getElementById('output')
-
 const namnBtn = document.getElementById('namnBtn')
-
-    namnBtn.addEventListener('click', (e) => {
-        e.preventDefault()
-        const input = document.getElementById('input')
-        const div = document.getElementById('div')
-        div.innerHTML = `Välkommen ${input.value}! Börja Spela!`
-    })
 
 let dScore = 0
 let mScore = 0
 let mittVal = ''
 let datorVal = ''
 let result = 0
+
+function mittNamn(){
+    namnBtn.addEventListener('click',(i)  => {
+        i.preventDefault()
+        const input = document.getElementById('input')
+        const div = document.getElementById('div')
+        div.innerHTML = `Välkommen ${input.value}! Börja Spela!`
+        
+    })
+}
+mittNamn()
+
    
 function helaSpelet(){
 friaVal.forEach(frittVal => frittVal.addEventListener('click',
