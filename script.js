@@ -13,10 +13,6 @@ const namnBtn = document.getElementById('namnBtn')
         div.innerHTML = `Välkommen ${input.value}! Börja Spela!`
     })
 
-    
-
-
-namn()
 let dScore = 0
 let mScore = 0
 let mittVal = ''
