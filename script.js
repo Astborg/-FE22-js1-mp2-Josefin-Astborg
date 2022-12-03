@@ -4,6 +4,19 @@ const resultatDisplay = document.getElementById('resultat')
 const friaVal = document.querySelectorAll('button')
 const output = document.getElementById('output')
 
+const namnBtn = document.getElementById('namnBtn')
+
+    namnBtn.addEventListener('click', (e) => {
+        e.preventDefault()
+        const input = document.getElementById('input')
+        const div = document.getElementById('div')
+        div.innerHTML = `Välkommen ${input.value}! Börja Spela!`
+    })
+
+    
+
+
+namn()
 let dScore = 0
 let mScore = 0
 let mittVal = ''
